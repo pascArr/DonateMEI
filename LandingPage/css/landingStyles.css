@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html, body{
+    margin:0px;
+    padding:0px;
+}
 
 body {
   
@@ -36,10 +40,7 @@ main {
 p, figure {
   margin: 15px 0;
 }
-figcaption {
-  text-align: center;
-  color: #999;
-}
+
 
 
 .logo-img {
@@ -50,6 +51,9 @@ figcaption {
 
 
 }
+
+
+
 
 #header-nav {
   background-color:#ecece2;
@@ -64,6 +68,7 @@ figcaption {
 }
 
 /**
+
 .bgimage {
 
 background-size: 100%; 
@@ -97,7 +102,7 @@ h1.section-heading {
   margin-top: -5px; 
   text-align: center;
 }
-
+/**
 .section-lead {
   margin: 30px 0;
 }
@@ -112,7 +117,7 @@ h1.section-heading {
   width:120%;
 }
 
-/**
+
 
 .btn-lg {
   padding-top: 15px;
@@ -205,17 +210,10 @@ p {
 
 
 
-#disclaimer {
 
-  font-family:"Open Sans";
-  padding: 1% 1% 1% 2%;
-  font-size:1.5em;
-  font-weight:100;
-
-}
 
 **/
-
+/**
 #box{
   width:500px;
   position:relative;
@@ -223,6 +221,16 @@ p {
 
 }
 
+**/
+p.disclaimer {
+
+  font-family:"Roboto";
+  padding: 1% 1% 1% 2%;
+  font-size:.7em;
+  font-weight:100;
+  color:  #f2f2f2;
+
+}
 .center-block {  
   display: block;  
   margin-right: auto;  
@@ -612,34 +620,40 @@ h1.section-heading {
 
 @media only screen and (max-width: 320px){
 
-p{
-  font-size:3em;
-  color:white;
+
+html{
+  overflow:auto; 
 }
 
 #offset{
-  margin-top: 90px;
+  margin-top: 92px;
 }
 
 .logo-img {
   background: url('../images/meiLogo154.png') no-repeat;
   width: 160px;
-  height: 96px;
-  margin: 2px 1px 2px 0;
+  height: 92px;
+  margin: 0 1px 0 5px;
 
 
+}
+
+figure.full-width {
+  margin-top: 0px;
 }
 
 .navbar-header {
-  height:90px;
-  padding-top: 1px;
+  height:92px;
+  width: 320px;
+  margin-bottom:none;
+  /**padding-top: 1px;**/
 
 }  
 
-.navbar-brand{
-  padding: 2px 2px 2px 3px;
+/**.navbar-brand{
+  padding: 1px 2px 1px 3px;
 
-}
+}**/
 
 
 
@@ -647,18 +661,17 @@ h1.section-heading {
   font-family: 'Rokkitt';
   color:    #F5F5F5;
   text-shadow: rgba(0,0,0,0.7) -1px 0, rgba(0,0,0,0.5) 0 -1px, rgba(255,255,255,0.7) 0 1px, rgba(0,0,0,0.5) -1px -2px;;
- 
-  font-size: 2em;
-  margin: 1px;
+  font-size: 1.3em;
+  padding: 1px 1px 1px 1px;
   z-index: 2;
-  position: absolute;
+  position: relative;
   top: 65%;
-  left: 0;
+  /**left: 0;
   right: 0;
   width: 100%;
   height: 26px;
-  padding: 0;
-  margin-top: -5px; 
+  margin: 1px 1px 1px;
+  margin-top: -5px; **/
   text-align: center;
 }
 
@@ -666,10 +679,10 @@ h1.section-heading {
 
 
 
-.img-responsive{
+/**.img-responsive{
   max-width:100%;
   padding: 20px 10px 15px 15px;
-}
+}**/
 
 
 
